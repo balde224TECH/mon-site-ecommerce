@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SanoussyAuto - Vente de Voitures</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="voiture.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span style="color: var(--primary-color); font-weight: 700;">SANOUSSY</span>AUTO
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#neuf">Véhicules neufs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#occasion">Véhicules d'occasion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-form">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="animate__animated animate__fadeIn">
+        <div class="container">
+            <h1>SanoussyAuto</h1>
+            <p>Découvrez notre sélection exclusive de véhicules neufs et d'occasion à des prix compétitifs</p>
+            <div class="back-to-home floating">
+                <a href="#neuf">
+                    <i class="fas fa-chevron-down"></i> Voir les véhicules <br> 
+                <a href="index.html">
+                    <i class="fas fa-arrow-up"></i> Acceuil
+                </a>
+                </a>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Section Véhicules Neufs -->
+        <section class="category-section animate__animated animate__fadeInUp" id="neuf">
+            <h2 class="category-title">Véhicules Neufs</h2>
+            <div class="photo-grid">
+                <!-- Véhicule 1 -->
+                <div class="product-card" data-product-id="VN001" data-product-name="Toyota RAV4 2023">
+                    <div class="product-image-container">
+                        <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                            <span class="product-badge">Neuf</span>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Toyota RAV4 2023</h3>
+                        <div class="product-specs">
+                            <div><i class="fas fa-tachometer-alt"></i> 0 km</div>
+                            <div><i class="fas fa-gas-pump"></i> Essence</div>
+                            <div><i class="fas fa-cog"></i> Automatique</div>
+                            <div><i class="fas fa-car"></i> SUV</div>
+                        </div>
+                        <div class="product-price">85,000,000 GNF</div>
+                        <div class="product-id"><i class="fas fa-hashtag"></i> VN001</div>
+                        <a href="https://wa.me/224664278708?text=Je%20suis%20intéressé%20par%20le%20Toyota%20RAV4%202023%20(VN001)%20à%2085,000,000%20GNF" class="product-btn">
+                            <i class="fab fa-whatsapp"></i> Commander
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Véhicule 2 -->
+                <div class="product-card" data-product-id="VN002" data-product-name="Hyundai Tucson 2023">
+                    <div class="product-image-container">
+                        <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1631729371254-42c2892f0e6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                            <span class="product-badge">Neuf</span>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Hyundai Tucson 2023</h3>
+                        <div class="product-specs">
+                            <div><i class="fas fa-tachometer-alt"></i> 0 km</div>
+                            <div><i class="fas fa-gas-pump"></i> Diesel</div>
+                            <div><i class="fas fa-cog"></i> Automatique</div>
+                            <div><i class="fas fa-car"></i> SUV</div>
+                        </div>
+                        <div class="product-price">78,500,000 GNF</div>
+                        <div class="product-id"><i class="fas fa-hashtag"></i> VN002</div>
+                        <a href="https://wa.me/224664278708?text=Je%20suis%20intéressé%20par%20le%20Hyundai%20Tucson%202023%20(VN002)%20à%2078,500,000%20GNF" class="product-btn">
+                            <i class="fab fa-whatsapp"></i> Commander
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Véhicule 3 -->
+                <div class="product-card" data-product-id="VN003" data-product-name="Kia Sportage 2023">
+                    <div class="product-image-container">
+                        <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1659535901690-ab95a8539929?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                            <span class="product-badge">Neuf</span>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Kia Sportage 2023</h3>
+                        <div class="product-specs">
+                            <div><i class="fas fa-tachometer-alt"></i> 0 km</div>
+                            <div><i class="fas fa-gas-pump"></i> Essence</div>
+                            <div><i class="fas fa-cog"></i> Automatique</div>
+                            <div><i class="fas fa-car"></i> SUV</div>
+                        </div>
+                        <div class="product-price">82,000,000 GNF</div>
+                        <div class="product-id"><i class="fas fa-hashtag"></i> VN003</div>
+                        <a href="https://wa.me/224664278708?text=Je%20suis%20intéressé%20par%20le%20Kia%20Sportage%202023%20(VN003)%20à%2082,000,000%20GNF" class="product-btn">
+                            <i class="fab fa-whatsapp"></i> Commander
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Véhicule 4 -->
+                <div class="product-card" data-product-id="VN004" data-product-name="Toyota Hilux 2023">
+                    <div class="product-image-container">
+                        <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1636466497217-26a8cbeaf0aa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                            <span class="product-badge">Neuf</span>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Toyota Hilux 2023</h3>
+                        <div class="product-specs">
+                            <div><i class="fas fa-tachometer-alt"></i> 0 km</div>
+                            <div><i class="fas fa-gas-pump"></i> Diesel</div>
+                            <div><i class="fas fa-cog"></i> Manuelle</div>
+                            <div><i class="fas fa-truck-pickup"></i> Pick-up</div>
+                        </div>
+                        <div class="product-price">92,500,000 GNF</div>
+                        <div class="product-id"><i class="fas fa-hashtag"></i> VN004</div>
+                        <a href="https://wa.me/224664278708?text=Je%20suis%20intéressé%20par%20le%20Toyota%20Hilux%202023%20(VN004)%20à%2092,500,000%20GNF" class="product-btn">
+                            <i class="fab fa-whatsapp"></i> Commander
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Véhicules d'Occasion -->
+        <section class="category-section animate__animated animate__fadeInUp" id="occasion">
+            <h2 class="category-title">Véhicules d'Occasion</h2>
+            <div class="photo-grid">
+                <!-- Véhicule 5 -->
+                <div class="product-card" data-product-id="VO001" data-product-name="Toyota Corolla 2020">
+                    <div class="product-image-container">
+                        <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                            <span class="product-badge">Occasion</span>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Toyota Corolla 2020</h3>
+                        <div class="product-specs">
+                            <div><i class="fas fa-tachometer-alt"></i> 45,000 km</div>
+                            <div><i class="fas fa-gas-pump"></i> Essence</div>
+                            <div><i class="fas fa-cog"></i> Automatique</div>
+                            <div><i class="fas fa-car"></i> Berline</div>
+                        </div>
+                        <div class="product-price">52,000,000 GNF</div>
+                        <div class="product-id"><i class="fas fa-hashtag"></i> VO001</div>
+                        <a href="https://wa.me/224664278708?text=Je%20suis%20intéressé%20par%20le%20Toyota%20Corolla%202020%20(VO001)%20à%2052,000,000%20GNF" class="product-btn">
+                            <i class="fab fa-whatsapp"></i> Commander
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Véhicule 6 -->
+                <div class="product-card" data-product-id="VO002" data-product-name="Honda CR-V 2019">
+                    <div class="product-image-container">
+                        <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1553440569-bcc63803a83d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                            <span class="product-badge">Occasion</span>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Honda CR-V 2019</h3>
+                        <div class="product-specs">
+                            <div><i class="fas fa-tachometer-alt"></i> 60,000 km</div>
+                            <div><i class="fas fa-gas-pump"></i> Essence</div>
+                            <div><i class="fas fa-cog"></i> Automatique</div>
+                            <div><i class="fas fa-car"></i> SUV</div>
+                        </div>
+                        <div class="product-price">58,500,000 GNF</div>
+                        <div class="product-id"><i class="fas fa-hashtag"></i> VO002</div>
+                        <a href="https://wa.me/224664278708?text=Je%20suis%20intéressé%20par%20le%20Honda%20CR-V%202019%20(VO002)%20à%2058,500,000%20GNF" class="product-btn">
+                            <i class="fab fa-whatsapp"></i> Commander
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Véhicule 7 -->
+                <div class="product-card" data-product-id="VO003" data-product-name="Mercedes C200 2018">
+                    <div class="product-image-container">
+                        <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                            <span class="product-badge">Occasion Premium</span>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Mercedes C200 2018</h3>
+                        <div class="product-specs">
+                            <div><i class="fas fa-tachometer-alt"></i> 35,000 km</div>
+                            <div><i class="fas fa-gas-pump"></i> Essence</div>
+                            <div><i class="fas fa-cog"></i> Automatique</div>
+                            <div><i class="fas fa-car"></i> Berline</div>
+                        </div>
+                        <div class="product-price">95,000,000 GNF</div>
+                        <div class="product-id"><i class="fas fa-hashtag"></i> VO003</div>
+                        <a href="https://wa.me/224664278708?text=Je%20suis%20intéressé%20par%20la%20Mercedes%20C200%202018%20(VO003)%20à%2095,000,000%20GNF" class="product-btn">
+                            <i class="fab fa-whatsapp"></i> Commander
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Véhicule 8 -->
+                <div class="product-card" data-product-id="VO004" data-product-name="Toyota Land Cruiser 2017">
+                    <div class="product-image-container">
+                        <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                            <span class="product-badge">Occasion Premium</span>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Toyota Land Cruiser 2017</h3>
+                        <div class="product-specs">
+                            <div><i class="fas fa-tachometer-alt"></i> 80,000 km</div>
+                            <div><i class="fas fa-gas-pump"></i> Diesel</div>
+                            <div><i class="fas fa-cog"></i> Automatique</div>
+                            <div><i class="fas fa-car"></i> 4x4</div>
+                        </div>
+                        <div class="product-price">120,000,000 GNF</div>
+                        <div class="product-id"><i class="fas fa-hashtag"></i> VO004</div>
+                        <a href="https://wa.me/224664278708?text=Je%20suis%20intéressé%20par%20le%20Toyota%20Land%20Cruiser%202017%20(VO004)%20à%20120,000,000%20GNF" class="product-btn">
+                            <i class="fab fa-whatsapp"></i> Commander
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="comment-section animate__animated animate__fadeInUp" id="contact-form">
+        <h2 class="section-title">Contactez-nous</h2>
+        <form id="orderForm">
+            <div class="mb-3">
+                <label for="productName" class="form-label">Véhicule intéressé</label>
+                <input type="text" id="productName" class="form-control" placeholder="Entrez le modèle du véhicule qui vous intéresse">
+            </div>
+            <div class="mb-3">
+                <label for="customerName" class="form-label">Votre nom</label>
+                <input type="text" id="customerName" class="form-control" placeholder="Entrez votre nom complet">
+            </div>
+            <div class="mb-3">
+                <label for="customerNumber" class="form-label">Numéro de téléphone</label>
+                <input type="tel" id="customerNumber" class="form-control" placeholder="Entrez votre numéro pour que nous puissions vous contacter" required>
+            </div>
+            <div class="mb-3">
+                <label for="comment" class="form-label">Votre message</label>
+                <textarea id="comment" class="form-control" rows="5" placeholder="Dites-nous ce que vous cherchez ou posez-nous vos questions..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">
+                <i class="fas fa-paper-plane"></i> Envoyer la demande
+            </button>
+        </form>
+    </section>
+
+    <footer class="animate__animated animate__fadeInUp">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/224664278708"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+            </div>
+            <p class="copyright">© 2025 SanoussyAuto - Tous droits réservés.</p>
+            <p>Livraison disponible | Paiement sécurisé | Service client 24/7</p>
+            <div class="back-to-home">
+                <a href="#">
+                    <i class="fas fa-arrow-up"></i> Retour en haut
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bouton flottant WhatsApp -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/224664278708" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="voiture.js"></script>
+</body>
+</html>

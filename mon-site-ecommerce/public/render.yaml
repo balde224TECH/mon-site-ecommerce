@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: mon-site-ecommerce
+    runtime: node
+    buildCommand: npm install
+    startCommand: node public/server.js
+    env: node
+    rootDirectory: public
