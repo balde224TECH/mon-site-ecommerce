@@ -1,4 +1,25 @@
-const express = require('express');
+require('dotenv').config(); // En tête du fichier
+
+// Configuration Telegram
+const TELEGRAM_API = `https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}/sendMessage`;
+
+app.post('/api/contact', async (req, res) => {
+  try {
+    const { name, email, message } = req.body;
+    
+    const telegramMsg = `📧 Nouveau contact:\nNom: ${name}\nEmail: ${email}\nMessage: ${message}`;
+
+    await axios.post(TELEGRAM_API, {
+      chat_id: process.env.TELEGRAM_CHAT_ID,
+      text: telegramMsg
+    });
+
+    res.status(200).json({ success: true });
+  } catch (error) {
+    console.error('Erreur Telegram:', error);
+    res.status(500).json({ error: 'Échec d\'envoi' });
+  }
+});const express = require('express');
 const path = require('path');
 require('dotenv').config();
 const app = express();
