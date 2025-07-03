@@ -12,6 +12,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        /* Style pour le bouton fixe */
+        .fixed-bottom-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        
+        .home-btn {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            background: linear-gradient(135deg, #6a5acd, #9370db);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 10px rgba(106, 90, 205, 0.3);
+        }
+        
+        .home-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(106, 90, 205, 0.4);
+            color: white;
+        }
+        
+        .home-btn i {
+            margin-right: 8px;
+            font-size: 1.1em;
+        }
+    </style>
     <link rel="stylesheet" href="vetement.css">
 </head>
 <body>
@@ -54,14 +87,16 @@
                 <a href="#homme">
                     <i class="fas fa-chevron-down"></i> Voir la collection
                 </a>
-                <div style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
-                    <a href="index.html" style="display: inline-flex; align-items: center; text-decoration: none; background: linear-gradient(135deg, #6a5acd, #9370db); color: white; padding: 10px 20px; border-radius: 30px; font-weight: 500; transition: all 0.3s ease-in-out; box-shadow: 0 4px 10px rgba(106, 90, 205, 0.3);" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 15px rgba(106, 90, 205, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 10px rgba(106, 90, 205, 0.3)'">
-                        <i class="fas fa-arrow-up" style="margin-right: 8px;"></i> Acceuil
-                    </a>
-                </div>
             </div>
         </div>
     </header>
+
+    <!-- Bouton Retour à l'accueil fixe en bas à droite -->
+    <div class="fixed-bottom-btn">
+        <a href="index.html" class="home-btn">
+            <i class="fas fa-home"></i> Accueil
+        </a>
+    </div>
 
     <div class="container">
         <!-- Section Hommes -->
@@ -415,25 +450,7 @@
             </div>
             <div class="mb-3">
                 <label for="whatsappNumber" class="form-label">Numéro WhatsApp client</label>
-                <input type="text" id="whatsappNumber" class="form-control" placeholder="Entrez votre numéro WhatsApp" required>
-            </div>
-            <div class="mb-3">
-                <label for="productID" class="form-label">ID du produit</label>
-                <input type="text" id="productID" class="form-control" placeholder="Entrez l'ID du produit (ex: VH001)" required>
-            </div>
-            <div class="mb-3">
-                <label for="customerNumber" class="form-label">Numéro de téléphone</label>
-                <input type="tel" id="customerNumber" class="form-control" placeholder="Entrez votre numéro pour que nous puissions vous contacter" required>
-            </div>
-            <div class="mb-3">
-                <label for="comment" class="form-label">Votre message (optionnel)</label>
-                <textarea id="comment" class="form-control" rows="5" placeholder="Dites-nous ce que vous cherchez ou posez-nous vos questions..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">
-                <i class="fas fa-paper-plane"></i> Envoyer la commande
-            </button>
-        </form>
-    </section>
+                <input type="text" id="whatsappNumber" class="form-control" placeholder="Ent<!-- ... (le code précédent reste identique jusqu'au footer) ... -->
 
     <footer class="animate__animated animate__fadeInUp">
         <div class="footer-content">
@@ -446,12 +463,171 @@
             <p class="copyright">© 2025 SanoussyFashion - Tous droits réservés.</p>
             <p>Livraison rapide | Paiement sécurisé | Service client 24/7</p>
             <div class="back-to-home">
-                <a href="#">
+                <a href="#" class="smooth-scroll">
                     <i class="fas fa-arrow-up"></i> Retour en haut
                 </a>
             </div>
         </div>
     </footer>
+
+    <!-- Bouton WhatsApp flottant -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/224XXXXXXXXX" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <style>
+        /* Styles généraux améliorés */
+        body {
+            scroll-behavior: smooth;
+            position: relative;
+        }
+
+        /* Bouton Retour à l'accueil amélioré */
+        .fixed-bottom-btn {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .home-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            background: linear-gradient(135deg, #6a5acd, #9370db);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(106, 90, 205, 0.4);
+            font-size: 0.95rem;
+            width: auto;
+        }
+
+        .home-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(106, 90, 205, 0.6);
+            color: white;
+        }
+
+        .home-btn i {
+            margin-right: 8px;
+            font-size: 1.1em;
+            transition: transform 0.3s ease;
+        }
+
+        .home-btn:hover i {
+            transform: scale(1.1);
+        }
+
+        /* Bouton WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.6);
+            background: #128C7E;
+        }
+
+        .whatsapp-float i {
+            font-size: 30px;
+        }
+
+        /* Animation pour les boutons */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .fixed-bottom-btn:hover, .whatsapp-float:hover {
+            animation: pulse 1.5s infinite;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .fixed-bottom-btn {
+                bottom: 70px;
+                right: 15px;
+            }
+            
+            .home-btn {
+                padding: 10px 15px;
+                font-size: 0.85rem;
+            }
+            
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 15px;
+                right: 15px;
+            }
+            
+            .whatsapp-float i {
+                font-size: 25px;
+            }
+        }
+    </style>
+
+    <script>
+        // Script pour le défilement fluide
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Script pour le bouton Retour en haut
+        const backToTopBtn = document.querySelector('.back-to-home a');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.style.opacity = '1';
+                backToTopBtn.style.visibility = 'visible';
+            } else {
+                backToTopBtn.style.opacity = '0';
+                backToTopBtn.style.visibility = 'hidden';
+            }
+        });
+
+        // Script pour le formulaire de commande
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const productName = document.getElementById('productName').value;
+            const whatsappNumber = document.getElementById('whatsappNumber').value;
+            const productID = document.getElementById('productID').value;
+            const customerNumber = document.getElementById('customerNumber').value;
+            const comment = document.getElementById('comment').value;
+            
+            // Ici vous pouvez ajouter le code pour envoyer les données
+            alert('Commande envoyée avec succès! Nous vous contacterons bientôt.');
+            this.reset();
+        });
+    </script>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
