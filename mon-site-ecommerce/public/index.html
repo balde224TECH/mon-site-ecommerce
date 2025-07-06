@@ -36,10 +36,6 @@
         }
         
         /* Styles communs */
-        body {
-            padding-top: 64px; /* Compensation pour la navbar fixe */
-            scroll-behavior: smooth;
-        }
         .hero-gradient {
             background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
         }
@@ -145,7 +141,7 @@
 
 <body class="font-sans">
     <!-- Barre de navigation principale -->
-    <nav class="bg-gray-900 text-white py-4 fixed top-0 left-0 right-0 z-50 shadow-lg">
+    <nav class="bg-gray-900 text-white py-4 sticky top-0 z-50 shadow-lg">
         <div class="container mx-auto px-4 flex justify-between items-center">
             <!-- Logo et titre -->
             <div class="flex items-center space-x-2">
@@ -230,7 +226,7 @@
                     <a href="Aipod.html" class="block py-2 text-gray-300 hover:text-white">
                         <i class="fas fa-headphones mr-3"></i>Accessoires
                     </a>
-                    <a href="voiture.html" class="block py-2 text-gray-300 hover:text-white">
+                    <a href="VOITURE.HTML" class="block py-2 text-gray-300 hover:text-white">
                         <i class="fas fa-car mr-3"></i>Voitures
                     </a>
                     <a href="multiservices.html" class="block py-2 text-gray-300 hover:text-white">
@@ -246,22 +242,16 @@
     </div>
 
     <!-- Section Hero -->
-    <section id="hero-section" class="hero-gradient text-white pt-24 pb-16 md:pt-32 md:pb-32">
+    <section id="hero-section" class="hero-gradient text-white py-16 md:py-32">
         <div class="container mx-auto px-4 text-center">
             <!-- Titre principal -->
-            <h1 class="text-3xl md:text-6xl font-bold mb-6">Bienvenue sur SanoussyBusness</h1>
+            <h1 class="text-3xl md:text-6xl font-bold mb-6">Bienvenue Chez SanoussyBusness</h1>
             <p class="text-lg md:text-2xl mb-8 max-w-2xl mx-auto">Votre boutique en ligne premium pour tous vos besoins en Guinée. Découvrez nos offres exclusives dès maintenant !</p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <!-- Bouton pour voir les promotions -->
                 <a href="#products-section" class="block">
                     <button class="btn-primary font-semibold py-3 px-8 rounded-lg w-full sm:w-auto">
                         Voir la Boutique
-                    </button>
-                </a>
-                <!-- Bouton pour nous appeler -->
-                <a href="tel:+224611657041" class="block">
-                    <button class="bg-white text-indigo-600 font-semibold py-3 px-8 rounded-lg w-full sm:w-auto hover:bg-gray-100 transition">
-                        <i class="fas fa-phone mr-2"></i>+224611657041
                     </button>
                 </a>
             </div>
@@ -288,6 +278,10 @@
                              alt="Produit 1" class="w-full h-full object-cover product-image" loading="lazy">
                         <!-- Étiquette de promotion -->
                         <div class="discount-badge">-20%</div>
+                        <!-- Bouton rapide -->
+                        <button class="absolute bottom-0 left-0 right-0 bg-indigo-600 text-white py-2 opacity-0 hover:opacity-100 transition-opacity duration-300 w-full">
+                            <i class="fas fa-shopping-cart mr-2"></i>Ajouter au panier
+                        </button>
                     </div>
                     <div class="p-4">
                         <!-- Nom du produit -->
@@ -317,6 +311,9 @@
                     <div class="relative h-48 sm:h-64 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
                              alt="Produit 2" class="w-full h-full object-cover product-image" loading="lazy">
+                        <button class="absolute bottom-0 left-0 right-0 bg-indigo-600 text-white py-2 opacity-0 hover:opacity-100 transition-opacity duration-300 w-full">
+                            <i class="fas fa-shopping-cart mr-2"></i>Ajouter au panier
+                        </button>
                     </div>
                     <div class="p-4">
                         <h3 class="text-lg font-semibold text-gray-800 mb-1">Montre Connectée</h3>
@@ -340,6 +337,9 @@
                         <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
                              alt="Produit 3" class="w-full h-full object-cover product-image" loading="lazy">
                         <div class="discount-badge">-10%</div>
+                        <button class="absolute bottom-0 left-0 right-0 bg-indigo-600 text-white py-2 opacity-0 hover:opacity-100 transition-opacity duration-300 w-full">
+                            <i class="fas fa-shopping-cart mr-2"></i>Ajouter au panier
+                        </button>
                     </div>
                     <div class="p-4">
                         <h3 class="text-lg font-semibold text-gray-800 mb-1">Écouteurs Bluetooth</h3>
@@ -365,6 +365,9 @@
                     <div class="relative h-48 sm:h-64 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
                              alt="Produit 4" class="w-full h-full object-cover product-image" loading="lazy">
+                        <button class="absolute bottom-0 left-0 right-0 bg-indigo-600 text-white py-2 opacity-0 hover:opacity-100 transition-opacity duration-300 w-full">
+                            <i class="fas fa-shopping-cart mr-2"></i>Ajouter au panier
+                        </button>
                     </div>
                     <div class="p-4">
                         <h3 class="text-lg font-semibold text-gray-800 mb-1">Sac à dos</h3>
@@ -439,7 +442,7 @@
     <section class="py-12 bg-gray-100">
         <div class="container mx-auto px-4">
             <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-6">Parlez de Nous</h2>
-            <p class="text-base md:text-lg text-gray-600 text-center max-w-2xl mx-auto mb-6">SanoussyBusness est une plateforme de référence de produits pour répondre aux besoins de nos clients. Nous sommes fiers de vous servire de qualité avec des prix exceptionnels.
+            <p class="text-base md:text-lg text-gray-600 text-center max-w-2xl mx-auto mb-6">SanoussyBusness est une plateforme de référence de produits pour répondre aux besoins de nos clients. Nous sommes fiers de vous servir de qualité avec des prix exceptionnels.
                 <br> Votre satisfaction est notre préoccupation.
             </p>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
@@ -538,7 +541,7 @@
                         </li>
                         <li class="flex items-start text-gray-400 text-sm md:text-base">
                             <i class="fas fa-phone mt-1 mr-3 text-indigo-400"></i>
-                            <span>+224 654 46 97 70</span>
+                            <span>+224611657041</span>
                         </li>
                         <li class="flex items-start text-gray-400 text-sm md:text-base">
                             <i class="fas fa-map-marker-alt mt-1 mr-3 text-indigo-400"></i>
