@@ -1,12 +1,13 @@
+/* styles.css */
 :root {
-    --primary-color: #1e88e5;
-    --primary-dark: #0d47a1;
-    --secondary-color: #f5f5f5;
-    --dark-color: #263238;
-    --text-color: #37474f;
-    --light-gray: #eceff1;
+    --primary-color: #6a5acd;  /* Nouvelle couleur principale - SlateBlue */
+    --primary-dark: #483d8b;   /* DarkSlateBlue */
+    --secondary-color: #f8f9fa;
+    --dark-color: #343a40;
+    --text-color: #495057;
+    --light-gray: #e9ecef;
     --shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    --gradient: linear-gradient(135deg, #1e88e5, #0d47a1);
+    --gradient: linear-gradient(135deg, #6a5acd, #9370db);
 }
 
 body {
@@ -19,6 +20,7 @@ body {
     overflow-x: hidden;
 }
 
+/* Header stylé */
 header {
     background: var(--gradient);
     color: white;
@@ -36,7 +38,7 @@ header::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1350&q=80') center/cover;
+    background: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1350&q=80') center/cover;
     opacity: 0.1;
     z-index: 0;
 }
@@ -65,6 +67,7 @@ header p {
     animation: fadeIn 1s both 0.3s;
 }
 
+/* Navigation */
 .main-nav {
     background: white;
     box-shadow: var(--shadow);
@@ -90,6 +93,7 @@ header p {
     font-weight: 600;
 }
 
+/* Sections produits */
 .category-section {
     margin: 5em auto;
     max-width: 1400px;
@@ -118,11 +122,12 @@ header p {
 
 .photo-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 2em;
     margin-bottom: 3em;
 }
 
+/* Cartes produits */
 .product-card {
     background: white;
     border-radius: 16px;
@@ -149,14 +154,14 @@ header p {
 
 .product-image {
     width: 100%;
-    height: 200px;
+    height: 320px;
     background-size: cover;
     background-position: center;
     transition: transform 0.8s ease;
 }
 
 .product-card:hover .product-image {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .product-badge {
@@ -189,24 +194,6 @@ header p {
     color: var(--dark-color);
 }
 
-.product-specs {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.5em;
-    margin-bottom: 1em;
-    font-size: 0.9em;
-}
-
-.product-specs div {
-    display: flex;
-    align-items: center;
-}
-
-.product-specs i {
-    margin-right: 5px;
-    color: var(--primary-color);
-}
-
 .product-price {
     color: var(--primary-color);
     font-weight: 700;
@@ -234,15 +221,16 @@ header p {
     text-decoration: none;
     cursor: pointer;
     margin-top: auto;
-    box-shadow: 0 4px 15px rgba(30, 136, 229, 0.3);
+    box-shadow: 0 4px 15px rgba(106, 90, 205, 0.3);
 }
 
 .product-btn:hover {
     background: var(--primary-dark);
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(30, 136, 229, 0.4);
+    box-shadow: 0 8px 20px rgba(106, 90, 205, 0.4);
 }
 
+/* Section formulaire */
 .comment-section {
     background: white;
     border-radius: 16px;
@@ -295,7 +283,7 @@ header p {
 
 .form-control:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 0.25rem rgba(30, 136, 229, 0.25);
+    box-shadow: 0 0 0 0.25rem rgba(106, 90, 205, 0.25);
     transform: translateY(-2px);
 }
 
@@ -306,15 +294,16 @@ header p {
     font-weight: 600;
     letter-spacing: 0.5px;
     transition: all 0.3s;
-    box-shadow: 0 4px 15px rgba(30, 136, 229, 0.3);
+    box-shadow: 0 4px 15px rgba(106, 90, 205, 0.3);
 }
 
 .btn-primary:hover {
     background: var(--primary-dark);
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(30, 136, 229, 0.4);
+    box-shadow: 0 8px 20px rgba(106, 90, 205, 0.4);
 }
 
+/* Footer */
 footer {
     background: var(--dark-color);
     color: white;
@@ -332,7 +321,7 @@ footer::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1350&q=80') center/cover;
+    background: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1350&q=80') center/cover;
     opacity: 0.05;
     z-index: 0;
 }
@@ -365,7 +354,7 @@ footer::before {
 .social-links a:hover {
     transform: translateY(-5px);
     background: var(--primary-color);
-    box-shadow: 0 5px 15px rgba(30, 136, 229, 0.4);
+    box-shadow: 0 5px 15px rgba(106, 90, 205, 0.4);
 }
 
 .copyright {
@@ -393,13 +382,14 @@ footer::before {
 .back-to-home a:hover {
     background: var(--primary-color);
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(30, 136, 229, 0.4);
+    box-shadow: 0 5px 15px rgba(106, 90, 205, 0.4);
 }
 
 .back-to-home i {
     margin-right: 8px;
 }
 
+/* Animations */
 @keyframes float {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-10px); }
@@ -410,6 +400,7 @@ footer::before {
     animation: float 3s ease-in-out infinite;
 }
 
+/* Alertes personnalisées */
 .custom-alert {
     position: fixed;
     top: 20px;
@@ -435,36 +426,7 @@ footer::before {
     border-left-color: #ff4757;
 }
 
-.whatsapp-float {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 100;
-}
-
-.whatsapp-float a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    background: #25D366;
-    color: white;
-    border-radius: 50%;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
-    transition: all 0.3s;
-}
-
-.whatsapp-float a:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 15px rgba(37, 211, 102, 0.4);
-}
-
-.whatsapp-float i {
-    font-size: 30px;
-}
-
+/* Responsive */
 @media (max-width: 992px) {
     header h1 {
         font-size: 2.8em;
@@ -500,7 +462,7 @@ footer::before {
     }
     
     .product-image {
-        height: 250px;
+        height: 300px;
     }
     
     .comment-section {
@@ -520,19 +482,5 @@ footer::before {
     
     footer {
         clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
-    }
-    
-    .whatsapp-float {
-        bottom: 20px;
-        right: 20px;
-    }
-    
-    .whatsapp-float a {
-        width: 50px;
-        height: 50px;
-    }
-    
-    .whatsapp-float i {
-        font-size: 25px;
     }
 }
